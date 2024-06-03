@@ -1,0 +1,571 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  user-select: none;
+}
+
+menu {
+  width: 90vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+menu ul li{
+    list-style: none;
+}
+
+menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+menu div {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  width: 100px;
+  display: flex;
+}
+
+menu div i {
+  width: 20px;
+  color: #ff5555;
+}
+
+menu div span {
+  display: inline-block;
+  font-size: larger;
+}
+
+menu ul {
+  width: 70%;
+  display: flex;
+  padding-left: 20px;
+  gap: 10%;
+  color: #000000;
+}
+
+menu ul li {
+  width: fit-content;
+}
+
+menu ul .home a {
+  color: #ff5555;
+}
+
+/* Hover effect on Menu  */
+@media screen and (min-width: 651px) {
+  ul li:hover {
+    transition: all 200ms ease-in-out;
+    scale: 1.08;
+    color: #ff5555;
+    border-bottom: 1px solid #ff5555;
+  }
+}
+
+menu button a {
+  text-decoration: none;
+  color: white;
+}
+
+menu button {
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #000;
+  border-radius: 5px;
+  position: absolute;
+  top: 3%;
+  right: 4%;
+}
+
+menu button:hover {
+  transition: all 200ms ease-in-out;
+
+  scale: 1.08;
+}
+@media screen and (max-width: 650px) {
+  menu {
+    height: 30vh;
+  }
+  menu ul {
+    flex-direction: column;
+    gap: 4px;
+    width: 50vw;
+  }
+  menu ul li {
+    font-size: 18px;
+    width: fit-content;
+    text-align: center;
+    padding: 6px;
+  }
+  .home {
+    background: rgba(56, 233, 56, 0.74);
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+  }
+  menu ul li:hover {
+    transition: all 500ms ease-out;
+    background: rgba(56, 233, 56, 0.74);
+    border-radius: 10px;
+  }
+  menu ul:hover {
+    .home {
+      background: none;
+    }
+    .home:hover {
+      background: rgba(56, 233, 56, 0.74);
+    }
+  }
+}
+
+/*  action css */
+
+.action{
+    width: 100vw;
+    /* margin: 10px; */
+    background-image: url("./assets/Group\ 35930.png");
+    background-repeat: no-repeat;
+}
+
+@media  screen and (max-width:650px) {
+    .overflow{
+         display: flex;
+         flex-direction: column;
+         gap:20px;
+    }
+    .action .overflow .right .img-1 img{
+      position:  relative;
+      left:-10%;
+      z-index: 100;
+      width:500px;
+    
+      
+    }
+    
+    .action .overflow .right .img-2  img{
+        position: relative;
+        left: -95%;
+        top: -40%;
+        z-index: 20;
+       width:500px;
+    }
+    .action .overflow .right .img-3  img {
+      position: relative;
+      left: -220%;
+      z-index: 10;
+     width: 400px;
+  
+    }
+    
+}
+
+@media  screen and (min-width:651px) {
+    .overflow{
+         display: flex;
+         flex-direction: row;
+         gap:10px;
+
+    }
+    .action .overflow .right .img-1 img{
+      position:  relative;
+      left: 5%;
+      z-index: 100;
+      width: fit-content;
+    
+      
+    }
+    
+    .action .overflow .right .img-2  img{
+        position: relative;
+        left: -85%;
+        top: -20%;
+        z-index: 20;
+       width: fit-content;
+    }
+    .action .overflow .right .img-3  img {
+      position: relative;
+      left: -210%;
+      z-index: 10;
+     width: fit-content;
+    }
+}
+.action .overflow .left{
+    margin-left: 10px;
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.left h1{
+    font-weight: 700;
+    font-size: 56px;
+}
+.left p{
+    text-align: left;
+    font-weight: 700;
+}
+.left  .video-start{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.video-start  div{
+    width: 170px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+}
+
+.get i{
+    font-size: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.video-start div button{
+    border: none;
+    background-color: transparent;
+}
+
+ .video_start{
+    background-color:transparent ;
+    color: black;
+
+}
+/* overflow right */
+
+.overflow .right{
+    margin-left: 3%;
+    width: 100vw;
+   
+    display: flex ;
+    /* position: relative; */
+    /* justify-content: center; */
+    align-items: center;
+    justify-items: center;
+    background-image: url("./assets/Group\ 35930.png");
+    background-position:center;
+    background-repeat: no-repeat;
+   
+    overflow: hidden;
+
+    
+    /* overflow: hidden; */
+
+}
+
+
+
+/* Feature css */
+
+.feature{
+
+  width: 90vw;
+  margin: auto;
+  overflow: hidden;
+  
+ 
+}
+.feature .feature-overflow .left img {
+  width:90%;
+}
+@media  screen and (max-width:650px) {
+  .feature-overflow{
+       display: flex;
+       flex-direction: column-reverse;
+      
+  }
+ 
+}
+
+@media  screen and (min-width:651px) {
+  .feature-overflow{
+       display: flex;
+       flex-direction: row;
+      
+
+  }
+
+}
+
+.feature .feature-overflow .right{
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: cenetr;
+  align-items: center;
+  /* width: 50%; */
+  text-align: start;
+}
+
+.feature-overflow .right h3,i{
+  color: #ff5555;
+  /* font-size: 15px;  */
+  font-weight: 300;
+
+}
+.feature-overflow .right .feature-name{
+  display:  flex ;
+  gap: 10px;
+  width: 100px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.feature-overflow .right .feature-name i{
+  text-align: center;
+  position: relative;
+  top: 12px;
+}
+
+/* Advantage Page  start */
+#advantage{
+  display:  flex ;
+  width: 90vw;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+@media screen and (min-width:651px){
+  #advantage{
+    flex-direction: row;
+    /* gap: 10px; */
+    justify-content: center;
+    align-items: center;
+  }
+}
+#advantage .left{
+  display:  flex ;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: cenetr;
+  align-items: flex-start;
+}
+#advantage .left h3{
+ color: #ff5555;
+}
+#advantage .left  .bellIcon i:before{
+  color: #ffffff;
+}
+#advantage .left  .bellIcon {
+  width: 90%;
+  display:  flex;
+justify-content: space-evenly;
+align-items: center;
+align-items: flex-start;
+}
+#advantage .left  .bellIcon h4{
+  position: relative;
+  right:44%;
+  font-weight: 700;
+  font-size: 24px;
+}
+#advantage .left p{
+
+  font-weight: 500;
+  color: #6e6b6bd5;
+}
+#advantage .left  .bellIcon i:before{
+  padding: 5px;
+  border-radius: 50%;
+  background:#ff5555;
+}
+#advantage  .right {
+  background-image: url('./assets/Group\ 35899.png');
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+}
+#advantage .right div img{
+  width:90%;
+}
+
+
+
+
+/* Advantage Page  end */
+
+/* Custimizable page css  */
+#lastpage{
+  display:  flex ;
+  width: 90vw;
+  margin: auto;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+
+@media screen and (min-width:651px){
+  #lastpage{
+    display:  flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#lastpage .left{
+  display:  flex ;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: cenetr;
+  align-items: flex-start;
+}
+
+#lastpage .left  .bellIcon i:before{
+  color: #ffffff;
+}
+#lastpage .left  .bellIcon {
+  width: 90%;
+  display:  flex;
+justify-content: space-evenly;
+align-items: center;
+align-items: flex-start;
+}
+#lastpage .left  .bellIcon h4{
+  position: relative;
+  right:44%;
+  font-weight: 700;
+  font-size: 24px;
+}
+#lastpage .left p{
+
+  font-weight: 500;
+  color: #6e6b6bd5;
+}
+#lastpage .left  .bellIcon i:before{
+  padding: 5px;
+  border-radius: 50%;
+  background:#ff5555;
+}
+#lastpage  .right {
+  background-image: url('./assets/Group\ 35899.png');
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+}
+#lastpage .right div img{
+  width :90%;
+}
+
+
+/*  Footer */
+
+@media screen and (max-width:650px) {
+  footer div{
+    
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer div .app{
+    width:0%;
+  }
+  footer div ul li  span{
+    left: -0%;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    }
+   
+
+  
+}
+footer{
+  width: 90vw;
+  margin: auto;
+  height: 43vh;
+  margin-top: 6%;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+
+}
+footer div ul li {
+  width: fit-content;
+
+}
+ul,a{
+  list-style: none;
+  text-decoration: none;
+}
+footer div  ul {
+  /* width: fit-content; */
+  display: flex ;
+  flex-direction: column;
+  gap:30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+footer div ul li div{
+  display: flex;
+  width: 250px;
+  text-align: start;
+
+}
+footer div ul li div h1{
+font-size: 18px;
+
+}
+footer div ul li div .logo{
+  font-size: 24px;
+  }
+footer div ul li div span{
+position: relative;
+left: -40%;
+}
+
+.subscribe div input{
+  border: none;
+
+}
+input:enabled{
+  border: none;
+}
+.subscribe div input::placeholder{
+  padding: 10px;
+}
+.subscribe button {
+   padding: 10px;
+   background: #000;
+   color: white;
+   border-radius: 5px;
+
+   border: none;
+}
+
+a{
+  color: #ff5555;
+}
+
+
+
+
+
+
+
+
+
